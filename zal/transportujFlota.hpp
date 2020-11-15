@@ -9,7 +9,7 @@ int zagl;
     {return 0;}
   else {
   int i=0;
-  for (i<towar)
+  for (is<towar)
   
   Stocznia stocznia{};
   Statek* s1 = stocznia();
