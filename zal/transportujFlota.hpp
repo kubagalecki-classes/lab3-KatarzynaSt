@@ -1,26 +1,27 @@
 #pragma once
-
+#include <iostream>
 #include "Stocznia.hpp"
 
 unsigned int transportujFlota(unsigned int towar)
 {int liczba;
-int zaglowce;
+int zagl;
   if (towar=0)
-      {return 0;}
+      return 0;
   else   {
 
   int i=0;
-  for (i=0; i<towar)
-  {
+  for (i; i<towar)
+  
   Stocznia stocznia{};
   Statek* s1 = stocznia();
-if (Zaglowiec* zagl = dynamic_cast< Zaglowiec >(s1)) {zaglowce++;}
+
+if (Zaglowiec* zaglowiec = dynamic_cast< Zaglowiec* >(s1)) {zagl++;}
 else {}
   
   liczba=statek->transportuj();
   i+=liczba;
-  delete statek;
-}}
+  delete s1;
+}
 
-return liczba;
+return zagl;
 } 
