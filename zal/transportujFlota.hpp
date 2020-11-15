@@ -14,7 +14,7 @@ int zaglowce;
   {
   Stocznia stocznia{};
   Statek* s1 = stocznia();
-if (Zaglowiec* zagl = dynamic_cast< Zaglowiec >(s1)) {zaglowce++}
+if (Zaglowiec* zagl = dynamic_cast< Zaglowiec >(s1)) {zaglowce++;}
 else {}
   
   liczba=statek->transportuj();
