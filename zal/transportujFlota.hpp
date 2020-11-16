@@ -3,9 +3,10 @@
 #include "Stocznia.hpp"
 
 unsigned int transportujFlota(unsigned int towar)
-{unsigned int PrzewiezionyTowar=0;
+{
+  int PrzewiezionyTowar=0;
 int zagl=0;
-  if(towar==0)
+  if(towar=0)
      {return 0;}
   else {
       int i=0;
@@ -13,16 +14,15 @@ int zagl=0;
         {
          Stocznia stocznia{};
          Statek* s1 = stocznia();
-
-            if (Zaglowiec* wziety= dynamic_cast< Zaglowiec* >(s1))
+         PrzewiezionyTowar=s1->transportuj();
+         i=i+PrzewiezionyTowar;
+        
+            if (s1= dynamic_cast< Zaglowiec* >(s1))
                    {zagl++;}
             else
-             {
-                PrzewiezionyTowar=s1->transportuj();
-                i=i+PrzewiezionyTowar;
-                delete s1;
-             }
-        }
+             {  }
+         delete s1;
+       }
        }
 return zagl;
 } 
